@@ -1,0 +1,323 @@
+body{
+    width: 100vw;   
+    height: 41pc;
+    background-color: #F3F5FC;
+    position: relative;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.header{
+    position: absolute;
+    top: 4%;
+    left: 6%
+}
+
+.input-block{
+    width:47%;
+    height:30pc;
+    position:absolute;
+    left: 17%;
+    top: 17%;
+}
+
+.input-block__textarea{
+    position: absolute;
+    width: 100%;
+    height:80%;    
+}
+
+#input-block__textarea-show{
+    position:absolute;
+    width:100%;
+    height:100%; 
+    font-size: 32px;
+    line-height: 1.5;  
+    background-color:transparent; 
+    border:none;
+    outline: 10px rgb(228, 229, 243)double;
+    color: #0A3871;
+    resize:none;  
+    font-family: "Roboto Condensed", sans-serif;
+    
+}
+
+#input-block__textarea-show::placeholder{
+    color: #0A3871;
+}
+
+.action-buttons{
+    position: absolute;
+    width:100%;
+    height:13%;
+    bottom:0%;
+}
+
+.action-buttons__warning{
+    margin-bottom: 1%;
+}
+
+.action-buttons__warming-exclamation-logo{
+    position: absolute;
+    left: 0pc;  
+}
+
+.action-buttons__warming-p{
+    margin-left: 1.2pc;
+    font-size: 1pc;
+    color: #575149;    
+}
+
+#action-buttons__group-button-encryp{
+    position: absolute;
+    width: 48%;
+    height: 80%;
+    left: 0%;
+    border-radius: 25px;
+    font-size: 1em;
+    background-color: transparent;
+    border-color: #757FB2;
+    color: #0A3871;  
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+#action-buttons__group-button-encryp:hover{
+    color:white;
+    background-color: #0A3871;
+}
+
+#action-buttons__group-button-decryp{
+    position: absolute;
+    width: 48%;
+    height: 80%;
+    right: 0%;
+    border-radius: 25px;
+    font-size: 1em; 
+    background-color: transparent; 
+    border-color: #757FB2;
+    color: #0A3871;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+#action-buttons__group-button-decryp:hover{
+    color:white;
+    background-color: #0A3871;
+}
+
+.encryptor-block{
+    border: 0px solid #00000014;
+    box-shadow: 0px 10px 20px 0px rgb(228, 224, 224);
+    border-radius: 2pc;
+    background-color:white;
+    width: 28%;
+    height: 40pc;
+    position: absolute;
+    left:69%;
+    top: 2%;  
+}
+
+.encryptor-block_empty{
+    position: absolute;
+    left: 5%;
+    width: 90%;
+}
+
+.encryptor-block__empty-muneco{
+    text-align: center;
+    margin-top: 25%; 
+}
+
+#encryptor-block__empty-img-muneco{
+    max-width: 100%;  
+    
+}
+
+#encryptor-block__empty-texts{
+    position: absolute;
+    margin-top: 5%;
+    text-align: center;
+    top: 25pc;  
+}
+
+#encryptor-block__empty-texts h1{
+    position: absolute;
+    font-size: 2pc;
+    font-weight: bold;
+    color: #343A40;
+    margin-bottom: 1.05em;
+    width: 100%;
+    top:0pc;
+}
+
+#encryptor-block__empty-texts p{
+    position: relative;
+    font-size: 1.2em;
+    color: #343A40;
+    top:5pc;
+}
+
+.encryptor-block__full{
+    position: absolute;
+    left: 6%;
+    right: 6%;
+    width: 90%;
+    height: 38pc;
+    top:1pc;
+}
+
+.encryptor-block__full-text{
+    position: absolute;
+    width: 100%;
+    height: 40pc;
+    margin-top: 1pc;
+}
+
+#encryptor-block__full-text-encrypted-decrypted{
+    position: absolute;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+    scrollbar-color:transparent transparent;
+    width: 100%;
+    height: 32pc;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align:justify;
+    color: #343A40;
+}
+
+.encryptor-block__full-copy{
+    position: absolute;
+    width: 100%;
+    bottom: 2%;
+}
+
+#encryptor-block__full-copy-button{
+    position: absolute;
+    width: 100%;
+    height: 3.2em;
+    bottom: 10%;
+    border: 2px solid #757FB2;
+    color: #0A3871;
+    border-radius: 2pc;
+    font-size: 1em; 
+    background-color: transparent;
+    display: none;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+#encryptor-block__full-copy-button:hover{
+    color:white;
+    background-color: #0A3871;
+    }
+
+    .creator-info{
+        position: absolute;
+        bottom: 0pc;
+        width: 100%;
+        height: 1.5pc;
+    }
+    
+    .creator-info__name{
+        font-size: 0.9pc;
+        margin-left: 25%;
+        margin-right: 30%;
+        color: #585f68; 
+        transition: transform 2s ease-in-out;  
+        text-align: center;    
+    }
+
+    .creator-info__name:hover, .creator-info__name:active{
+        transform: scale(1.2);
+        text-shadow: -2px 2px 20px rgb(181, 182, 175);        
+    }
+   
+
+    @media screen and (max-width:1024px){
+        #header__imglogo{
+            position: absolute;
+            left:-8vw;
+            width: 4pc;
+            top: -0.5pc;
+
+        }
+       
+        .input-block{
+            width: 90%;
+            height: 30em;
+            display: block;
+            position: relative;
+            box-sizing: border-box;
+            left:4%;
+            top:4pc;
+            margin-bottom: 1pc;
+        }
+        #input-block__textarea-show{
+            font-size: 22px; 
+        }
+                
+        .encryptor-block{
+            width: 91.5%;
+            height: 20pc;
+            display: block;
+            position: relative;
+            box-sizing: border-box;
+            font-size: 3vw;
+            left:4%;
+            top:5pc;
+            overflow: hidden;
+        }
+
+        #encryptor-block__empty-img-muneco{
+            display: none; 
+        }
+
+        #encryptor-block__empty-texts{
+            margin-top: 10%;
+            top: -1pc;
+            left: 5%;
+            right: 5%;
+        }
+        #encryptor-block__empty-texts h1{
+            font-size: 22px;
+            
+        }
+        #encryptor-block__empty-texts p{
+            margin-top: -5%;
+            font-size: 20px;
+        }
+
+        .encryptor-block__full{
+            height: 20pc;
+            top:-0.5pc;
+        }
+
+        .encryptor-block__full-text{
+            position: absolute;
+            width: 100%;
+            height: 20pc;
+            margin-top: 4pc;
+        }
+
+        #encryptor-block__full-text-encrypted-decrypted{        
+            height: 69%;
+            top:-2pc;
+        }
+        
+        #encryptor-block__full-copy-button{
+            height: 3pc;
+            font-size: 1pc; 
+        }
+
+        .creator-info{
+            bottom: -17pc; 
+        }
+        
+        .creator-info__name{
+            text-align: center;
+            font-size: 0.8pc;
+            margin-left: 30%;
+            margin-right: 30%
+        }
+    }
+
+    
+    

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <header class="header"> 
+        <img id="header__imglogo" src="Images/Logo.png" alt="logo-alura">
+    </header>
+    <main class="main">
+            <div class="input-block">
+                <div class="input-block__textarea">
+                    <textarea autocapitalize="off" autocomplete="off" placeholder="Ingrese el texto aquí" id="input-block__textarea-show"></textarea>
+    
+                </div>
+                <div class="action-buttons">
+                    <div class="action-buttons__warning">
+                        <img src="Images/exclamation-marks-logo.png" class="action-buttons__warming-exclamation-logo">
+                        <p class="action-buttons__warming-p">Sólo letras minúsculas y sin acentos</p>
+                    </div>
+                    <div class="action-buttons__group">
+                        <input type="button" onclick="encryptedFunction(inputValue())" value="Encriptar" class="action-buttons__group-button" id="action-buttons__group-button-encryp">
+                        <input type="button" onclick="decryptedFunction(inputValue())" value="Desencriptar" class="action-buttons__group-button" id="action-buttons__group-button-decryp">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="encryptor-block">
+                <div class="encryptor-block_empty">
+                    <div  class="encryptor-block__empty-muneco">
+                        <img src="Images/Muñeco.png" alt="image-muneco" id="encryptor-block__empty-img-muneco">
+                    </div>
+                    <div id="encryptor-block__empty-texts">
+                        <h1>Ningún mensaje fue encontrado</h1>
+                        <p>Ingrese el texto que desea encriptar o desencriptar</p1>
+                    </div>
+                </div>    
+                    
+                <div class="encryptor-block__full">
+                    <div class="encryptor-block__full-text">
+                        <h2 id="encryptor-block__full-text-encrypted-decrypted"></h2>
+                    </div>
+                    <div class="encryptor-block__full-copy">
+                        <input onclick="copyGeneratedText('encryptor-block__full-text-encrypted-decrypted')"  id="encryptor-block__full-copy-button" type="button" value="Copiart texto">
+                    </div>
+                </div>
+            </div>
+            <footer class="creator-info"> 
+                <h2 class="creator-info__name">Reto Encriptador de texto | Alura + Oracle | Desarrollado por William M.</h2>
+                
+            </footer>
+        
+           
+       
+        
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
